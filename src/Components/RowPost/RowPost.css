@@ -1,0 +1,41 @@
+.row{
+    margin-left: 20px;
+    color: #fff;
+
+}
+.posters {
+    display: flex;
+    padding: 20px;
+    overflow-x: auto; /* Allows horizontal scrolling */
+    overflow-y: hidden; /* Prevents vertical scrolling */
+     /* Hides scrollbar in Firefox */
+}
+
+.posters::-webkit-scrollbar {
+    height: 8px;
+}
+
+.posters::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+}
+
+.posters::-webkit-scrollbar-track {
+    background: transparent;
+}
+.poster{
+    max-height: 250px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.smallPoster{
+    max-height: 150px;
+    margin-right: 10px;
+   cursor: pointer;
+}
+.poster:hover{
+    transform: scale(1.1);
+}
+.smallPoster:hover{
+    transform: scale(1.1);
+}
